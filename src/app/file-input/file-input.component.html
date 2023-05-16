@@ -1,0 +1,7 @@
+<div class="custom-file-input">
+    <label class="custom-file-label" for="fileInput">
+    <ng-container *ngIf="name">{{ name }}</ng-container>
+    <ng-container *ngIf="!name">Provide a copy of your card</ng-container>
+  </label>
+    <input type="file" required id="fileInput" (change)="handleFileInputChange($event)" />
+</div>

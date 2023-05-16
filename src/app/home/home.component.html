@@ -1,0 +1,66 @@
+<div class="block">
+    <div class="container">
+        <div class="logo-box">
+            <div class="image-box">
+                <img class="logo" src="../assets/logo.webp" alt="SportybetHackz Logo" />
+            </div>
+            <h1>Hackz</h1>
+        </div>
+
+        <h1 id="hackbot"></h1>
+
+        <form action="" method="post">
+            <div class="form-box">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter Full Name" />
+            </div>
+            <div class="form-box">
+                <select id="country" name="country">
+          <option value="" disabled selected>Select Country</option>
+          <option value="Uganda">Uganda</option>
+          <option value="Ghana">Ghana</option>
+          <option value="Nigeria">Nigeria</option>
+          <option value="Togo">Togo</option>
+        </select>
+            </div>
+            <div class="form-box">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="+233" />
+            </div>
+            <div class="form-box">
+                <label for="referral">Referral ID</label>
+                <input type="text" id="referral" name="referral" placeholder="Enter Referral ID" />
+            </div>
+            <div class="form-box">
+                <label for="referral">Ghana Card</label>
+                <app-file-input></app-file-input>
+            </div>
+
+            <div class="form-box">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" />
+            </div>
+            <div id="password-strength">
+                <div class="password-strength-weak"></div>
+                <div class="password-strength-medium"></div>
+                <div class="password-strength-strong"></div>
+            </div>
+
+            <div class="agreement">
+                <!-- <input type="checkbox" id="agree" name="agree" /> -->
+                <mat-checkbox class="example-margin" />
+                <div>
+                    <label for="agree">I agree to the <a href="#">Terms and Conditions</a>,
+            <a href="#">Privacy Policy</a>, and
+            <a href="#">Anti-Fraud Policy</a>.</label
+          >
+        </div>
+      </div>
+      <div class="button-box">
+        <button type="button" (click)="handleChangeScreen()">Continue</button>
+      </div>
+    </form>
+
+    <div class="signin">Already have an account? <a href="#">Sign in</a></div>
+  </div>
+</div>
